@@ -1,10 +1,16 @@
 import React from 'react'
 import Link from 'next/link'
 
+interface ILink {
+  key: string;
+  href: string;
+  label: string;
+}
+
 const links = [
   { href: 'https://zeit.co/now', label: 'ZEIT' },
   { href: 'https://github.com/zeit/next.js', label: 'GitHub' }
-].map(link => {
+].map((link: ILink) => {
   link.key = `nav-link-${link.href}-${link.label}`
   return link
 })
