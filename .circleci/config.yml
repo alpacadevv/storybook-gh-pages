@@ -46,9 +46,8 @@ jobs:
       - run:
           name: Deploy
           branch: master
-          commands:
-            - now -t ${NOW_TOKEN}
-            - now -t ${NOW_TOKEN} alias
+          command: now -t ${NOW_TOKEN} alias
+            # - now -t ${NOW_TOKEN} alias
       
       # Download and cache dependencies
       #- restore_cache:
