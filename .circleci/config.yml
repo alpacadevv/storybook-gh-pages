@@ -46,7 +46,7 @@ jobs:
       - run:
           name: Deploy
           branch: master
-          command:
+          commands:
             - now -t ${NOW_TOKEN}
             - now -t ${NOW_TOKEN} alias storybook-gh-pages
       
