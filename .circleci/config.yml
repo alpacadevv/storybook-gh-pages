@@ -46,7 +46,7 @@ jobs:
       - run:
           name: Deploy
           branch: master
-          command: now -t ${NOW_TOKEN} alias js428118
+          command: now -t ${NOW_TOKEN} alias
             # - now -t ${NOW_TOKEN} alias
       
       # Download and cache dependencies
