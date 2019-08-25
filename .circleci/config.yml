@@ -64,10 +64,10 @@ jobs:
 
       # run tests!
       #- run: npm test
-workflows:
-  deploy:
-    jobs:
-      - build:
-          filters:
-            branches:
-              only: master
+# workflows:
+#   deploy:
+#     jobs:
+#       - build:
+#           filters:
+#             branches:
+#               only: master
