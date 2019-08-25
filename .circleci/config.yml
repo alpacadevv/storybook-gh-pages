@@ -7,9 +7,9 @@ defaults: &defaults
   docker:
     - image: circleci/node:7.10
 commands:
-  prepare:
-    steps:
-      - checkout
+  # prepare:
+    # steps:
+      # - checkout
       # - restore_cache:
       #     keys:
       #       - v1-dependencies-{{ checksum "package.json" }}
@@ -33,7 +33,7 @@ jobs:
     #working_directory: ~/repo
     <<: *defaults
     steps:
-      - prepare
+      - checkout
       # - run:
       #     name: Environment test~
       #     command: echo ${TEST_VAR}
