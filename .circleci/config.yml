@@ -6,7 +6,7 @@ defaults: &defaults
   working_directory: ~/storybook-gh-pages
   docker:
     - image: circleci/node:latest
-commands:
+# commands:
   # prepare:
     # steps:
       # - checkout
@@ -48,7 +48,7 @@ jobs:
           branch: master
           commands:
             - now -t ${NOW_TOKEN}
-            - now -t ${NOW_TOKEN} alias storybook-gh-pages
+            - now -t ${NOW_TOKEN} alias
       
       # Download and cache dependencies
       #- restore_cache:
