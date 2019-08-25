@@ -1,0 +1,4 @@
+{
+  "alias": ["storybook-gh-pages"],
+  "forwardNpm": true
+}

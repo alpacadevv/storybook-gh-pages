@@ -7,7 +7,7 @@ import Nav from '../components/nav'
 const Home: NextPage = () => (
   <div>
     <Head>
-      <title>Home</title>
+      <title>I think I succeeded. I can sleep now.</title>
     </Head>
     <Nav />
   </div>

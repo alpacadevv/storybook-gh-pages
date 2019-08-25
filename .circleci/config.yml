@@ -3,7 +3,7 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 version: 2
 defaults: &defaults
-  working_directory: ~/repo
+  working_directory: ~/storybook-gh-pages
   docker:
     - image: circleci/node:latest
 commands:
@@ -46,7 +46,9 @@ jobs:
       - run:
           name: Deploy
           branch: master
-          command: now -t ${NOW_TOKEN}
+          command:
+            - now -t ${NOW_TOKEN}
+            - now -t ${NOW_TOKEN} alias storybook-gh-pages
       
       # Download and cache dependencies
       #- restore_cache:
